@@ -6,14 +6,15 @@
   background-color: $secondary_color;
   margin: 5vh;
   border-radius: 2rem;
+  color: $main_color;
   filter: drop-shadow(0 4mm 2mm rgba(46, 30, 65, 0.302));
   transition: 0.5s ease;
   &:hover {
     transform: scale(1.005);
   }
-
+  text-align: center;
   .profile {
-    margin: 2rem 0rem;
+    margin: 3rem auto 2rem auto;
     width: 3rem;
   }
 
@@ -32,9 +33,13 @@
       display: grid;
 
       gap: 1rem;
+      text-align: center;
       margin-top: -15rem;
       > h1 {
         padding: 0.5rem;
+      }
+      > p {
+        padding: 1.25rem;
       }
     }
   }
