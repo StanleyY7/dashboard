@@ -13,21 +13,26 @@ const SideBar = () => {
 
             <div className={styles.content__grid}>
               <img src={image} className={styles.profile}></img>
-
-              <p>Username: {data.username}</p>
-              <p>Honor: {data.honor ? data.honor : "0"}</p>
-              <p>
-                {" "}
-                Rank:{" "}
-                {data.ranks.overall.name ? data.ranks.overall.name : "Unknown"}
-              </p>
-              <p>Clan: {data.clan ? data.clan : "Unknown"}</p>
-              <p>
-                Completed Challenges:{" "}
-                {data.codeChallenges.totalCompleted
-                  ? data.codeChallenges.totalCompleted
-                  : "0"}
-              </p>
+              {data && (
+                <>
+                  <p>Username: {data.username ? data.username : "Unknown"}</p>
+                  <p>Honor: {data.honor ? data.honor : "0"}</p>
+                  <p>
+                    {" "}
+                    Rank:{" "}
+                    {data.ranks && data.ranks.overall.name
+                      ? data.ranks.overall.name
+                      : "Unknown"}
+                  </p>
+                  <p>Clan: {data.clan ? data.clan : "Unknown"}</p>
+                  <p>
+                    Completed Challenges:{" "}
+                    {data.codeChallenges && data.codeChallenges.totalCompleted
+                      ? data.codeChallenges.totalCompleted
+                      : "0"}
+                  </p>
+                </>
+              )}
             </div>
           </div>
         </div>
