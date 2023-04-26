@@ -1,0 +1,27 @@
+@import "../../theme.scss";
+
+.MainPage__container {
+  display: flex;
+
+  .wrapper {
+    height: 90vh;
+    width: 80vw;
+    background-color: white;
+    margin: 5vh 8vh 10vh 0vh;
+    border-radius: 1rem;
+    .flex__wrapper {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  height: 12.5%;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,41 @@
+@import "../../theme.scss";
+
+.SideBar__container {
+  height: 90vh;
+  width: 16vw;
+  background-color: $secondary_color;
+  margin: 5vh;
+  border-radius: 2rem;
+  filter: drop-shadow(0 4mm 2mm rgba(46, 30, 65, 0.302));
+  transition: 0.5s ease;
+  &:hover {
+    transform: scale(1.005);
+  }
+
+  .profile {
+    margin: 2rem 0rem;
+    width: 3rem;
+  }
+
+  .SideBar__content {
+    display: grid;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+
+    .heading {
+      color: $main_color;
+      margin-bottom: 3rem;
+    }
+
+    .content__grid {
+      display: grid;
+
+      gap: 1rem;
+      margin-top: -15rem;
+      > h1 {
+        padding: 0.5rem;
+      }
+    }
+  }
+}

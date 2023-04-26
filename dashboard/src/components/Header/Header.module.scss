@@ -1,0 +1,14 @@
+@import "../../theme.scss";
+
+.Header__container {
+  padding: 1.75rem;
+  > h4 {
+    font-weight: 50;
+    color: rgba(72, 72, 72, 0.654);
+  }
+  > h1 {
+    padding-top: 0.75rem;
+    font-size: 1.75rem;
+    color: $dark_font_color;
+  }
+}
