@@ -3,16 +3,25 @@ import image from "../../../public/d.svg";
 import { useContext } from "react";
 import { GlobalContext } from "../Context/Context";
 const SideBar = () => {
-  const { data }: any = useContext(GlobalContext);
+  const { data, github }: any = useContext(GlobalContext);
   return (
     <>
       <section className={styles.SideBar__wrapper}>
         <div className={styles.SideBar__container}>
           <div className={styles.SideBar__content}>
-            <h1 className={styles.heading}>Codewars Dash</h1>
+            <h1 className={styles.heading}>Side Dash</h1>
 
             <div className={styles.content__grid}>
-              <img src={image} className={styles.profile}></img>
+              <img
+                src={
+                  github
+                    ? `${github.map((item) => {
+                        return item.owner.avatar_url;
+                      })}`
+                    : image
+                }
+                className={styles.profile}
+              ></img>
               {data && (
                 <>
                   <p>Username: {data.username ? data.username : "Unknown"}</p>

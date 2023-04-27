@@ -1,18 +1,23 @@
 import styles from "./Grid.module.scss";
 import { useContext } from "react";
 import { GlobalContext } from "../Context/Context";
+import GithubCard from "../GithubCard/GithubCard";
+
 const Grid = () => {
-  const { data }: any = useContext(GlobalContext);
+  const { github }: any = useContext(GlobalContext);
+
   return (
     <>
       <section className={styles.Grid__wrapper}>
         <div className={styles.Grid__container}>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
-          <div className={styles.card}></div>
+          {github &&
+            github.map((item: any) => {
+              return (
+                <>
+                  <GithubCard item={item} />
+                </>
+              );
+            })}
         </div>
       </section>
     </>

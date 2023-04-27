@@ -1,15 +1,24 @@
 import styles from "./SearchBar.module.scss";
 import { fetchData } from "../../services/search";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { GlobalContext } from "../Context/Context";
-
+import { fetchGithubData } from "../../services/search";
+import s from "../../assets/s.png";
 const SearchBar = () => {
-  const { setData, user, setUser } = useContext(GlobalContext);
+  const { setData, user, setGithub, setUser } = useContext(GlobalContext);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    const r = await fetchData(user);
-    setData(r);
+    try {
+      const r = await fetchData(user);
+      const g = await fetchGithubData(user);
+      setData(r);
+      if (g) {
+        setGithub(g);
+      }
+    } catch (e) {
+      console.log(e);
+    }
   };
 
   return (
@@ -22,8 +31,13 @@ const SearchBar = () => {
               type="text"
               placeholder="Enter a username here"
               onChange={(e) => setUser(e.target.value)}
+              required
             ></input>
-            <button>🔍</button>
+            <button>
+              <div className={styles.s__container}>
+                <img src={s} className={styles.search}></img>
+              </div>
+            </button>
           </form>
         </div>
       </section>

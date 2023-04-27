@@ -3,9 +3,21 @@
   border-radius: 0.25rem;
   width: 15rem;
 }
-
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 button {
-  padding: 0.25rem 0.5rem;
   background-color: transparent;
   border: none;
+}
+
+.s__container {
+  .search {
+    width: 1vw;
+    padding: 0.25rem 1rem 0 0.5rem;
+    margin: auto;
+  }
 }
