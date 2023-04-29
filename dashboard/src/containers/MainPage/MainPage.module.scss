@@ -25,3 +25,12 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@media only screen and (max-width: 300px) {
+  .MainPage__container {
+    .wrapper {
+      height: 90vh;
+      width: 58vw;
+    }
+  }
+}

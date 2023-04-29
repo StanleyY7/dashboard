@@ -44,3 +44,32 @@
     }
   }
 }
+
+@media only screen and (max-width: 330px) {
+  .SideBar__container {
+    height: 90vh;
+    width: 24vw;
+
+    margin: 5vh 2vh 0 2.5vh;
+
+    .profile {
+      width: 1rem;
+    }
+
+    .SideBar__content {
+      .content__grid {
+        display: grid;
+
+        gap: 1rem;
+        text-align: center;
+        margin-top: -15rem;
+        > h1 {
+          font-size: 0.4rem;
+        }
+        > p {
+          font-size: 0.35rem;
+        }
+      }
+    }
+  }
+}

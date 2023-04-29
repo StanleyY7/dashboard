@@ -25,3 +25,23 @@
     }
   }
 }
+
+@media only screen and (max-width: 330px) {
+  .card {
+    height: 6rem;
+    width: 6rem;
+
+    > div {
+      text-align: center;
+      padding: 1rem;
+      > h1 {
+        padding-bottom: 0.25rem;
+        font-size: 0.75rem;
+      }
+      > p {
+        padding: 0.25rem;
+        font-size: 0.5rem;
+      }
+    }
+  }
+}
