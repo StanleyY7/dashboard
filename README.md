@@ -2,9 +2,9 @@
 
 Inspired by a recent hackathon project I participated in. This is an extension of that project. 
 
-Current Progress - Initial Commit:
+Current Progress - 3rd Commit:
 
-![image](https://user-images.githubusercontent.com/119549394/234562450-30c504ea-f6a9-499e-b18e-842df7f3d886.png)
+![image](https://user-images.githubusercontent.com/119549394/234842650-c5f8a703-b9cf-4da3-86b3-49c4e77dda5d.png)
 
 Design
 
