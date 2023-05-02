@@ -9,9 +9,8 @@ const SideBar = () => {
       <section className={styles.SideBar__wrapper}>
         <div className={styles.SideBar__container}>
           <div className={styles.SideBar__content}>
-            <h1 className={styles.heading}>Side Dash</h1>
-
             <div className={styles.content__grid}>
+              <h1 className={styles.heading}>Side Dash</h1>
               <img
                 src={
                   github

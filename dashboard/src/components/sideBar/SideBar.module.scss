@@ -14,7 +14,7 @@
   }
   text-align: center;
   .profile {
-    margin: 3rem auto 0.5rem auto;
+    margin: 0rem auto 0.5rem auto;
     width: 8rem;
   }
 
@@ -35,9 +35,9 @@
       gap: 1rem;
       text-align: center;
       margin-top: -15rem;
-      > h1 {
-        padding: 0.5rem;
-      }
+      align-items: center;
+      height: 50%;
+
       > p {
         padding: 1.25rem;
       }
@@ -69,6 +69,78 @@
         > p {
           font-size: 0.35rem;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 330px) and (max-width: 600px) {
+  .SideBar__container {
+    height: 90vh;
+    width: 28vw;
+
+    margin: 5vh 2vh 0 2.5vh;
+
+    .profile {
+      width: 1rem;
+    }
+
+    .SideBar__content {
+      .content__grid {
+        > h1 {
+          font-size: 0.4rem;
+        }
+        > p {
+          font-size: 0.35rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1050px) {
+  .SideBar__container {
+    height: 90vh;
+    width: 28vw;
+
+    margin: 5vh 2vh 0 2.5vh;
+
+    .profile {
+      width: 6rem;
+    }
+
+    .SideBar__content {
+      .content__grid {
+        > h1 {
+          font-size: 1rem;
+        }
+        > p {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1270px) {
+  .SideBar__container {
+    height: 90vh;
+    width: 28vw;
+
+    margin: 5vh 2vh 0 2.5vh;
+
+    .profile {
+      width: 10rem;
+    }
+  }
+
+  .SideBar__content {
+    .content__grid {
+      > h1 {
+        font-size: 1.15rem;
+      }
+      > p {
+        font-size: 1rem;
       }
     }
   }

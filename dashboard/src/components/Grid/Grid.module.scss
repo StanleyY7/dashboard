@@ -32,10 +32,18 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
   .Grid__wrapper {
     .Grid__container {
       grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .Grid__wrapper {
+    .Grid__container {
+      grid-template-columns: 1fr 1fr;
     }
   }
 }

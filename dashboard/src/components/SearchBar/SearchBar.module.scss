@@ -22,7 +22,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 600px) {
   .inputBar {
     width: 1rem;
   }
@@ -30,6 +30,19 @@ button {
   .s__container {
     .search {
       width: 4vw;
+      padding: 0rem 1rem 0 0.25rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .inputBar {
+    width: 5rem;
+  }
+
+  .s__container {
+    .search {
+      width: 2vw;
       padding: 0rem 1rem 0 0.25rem;
     }
   }
