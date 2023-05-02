@@ -13,7 +13,7 @@ const SideBar = () => {
               <h1 className={styles.heading}>Side Dash</h1>
               <img
                 src={
-                  github
+                  github && Array.isArray(github)
                     ? `${github.map((item) => {
                         return item.owner.avatar_url;
                       })}`

@@ -11,6 +11,7 @@ const Grid = () => {
       <section className={styles.Grid__wrapper}>
         <div className={styles.Grid__container}>
           {github &&
+            Array.isArray(github) &&
             github.map((item: any) => {
               return (
                 <>
