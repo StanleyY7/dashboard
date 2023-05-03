@@ -12,6 +12,8 @@ The main purpose of this project was to see if I could complete a recent hackath
 
 Design
 
+General design below, modified as not needing links and other card types in actual version.
+
 ![image](https://user-images.githubusercontent.com/119549394/234543737-8dbb7374-4d51-4be2-aca4-b23076157fe6.png)
 
 Features
