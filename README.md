@@ -2,11 +2,27 @@
 
 Inspired by a recent hackathon project I participated in. This is an extension of that project. 
 
-Current Progress - 3rd Commit:
+Link: https://6451af988eb7a017149e982d--tangerine-mousse-5eae8a.netlify.app/
 
-![image](https://user-images.githubusercontent.com/119549394/234842650-c5f8a703-b9cf-4da3-86b3-49c4e77dda5d.png)
+![image](https://user-images.githubusercontent.com/119549394/235815105-a157622e-6faf-41dc-ac4b-2b1540017700.png)
+
+### Overview/Purpose
+
+The main purpose of this project was to see if I could complete a recent hackathon project I participated in by myself (entirely from scratch within the same time constraints i.e. 3 hours). I was unable to complete it all within 3 hours. However I did get a majority of the original Hackathon MVP done within 3 hours (consisting of general scss/css, logic for codewars fetching, logic for github fetching and displaying this information using Context API for state handling). Now I work on this project to improve it and "complete" it, so it features testing, is responsive and contains error-handling for usernames being passed in (i.e. if codewars data does not exist for username entered it displays something else, likewise with github data). 
 
 Design
 
 ![image](https://user-images.githubusercontent.com/119549394/234543737-8dbb7374-4d51-4be2-aca4-b23076157fe6.png)
+
+Features
+
+- Fetching and displaying data from Github and Codewars API with appropriate error-handling.
+- Responsiveness
+- Testing
+
+Tech Stack
+
+- TypeScript
+- React
+- Cypress
 
