@@ -1,0 +1,11 @@
+@import "../../theme.scss";
+
+.doughnut {
+  padding: 2rem 6rem 6rem 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .doughnut {
+    padding: 2rem 13rem 13rem 1rem;
+  }
+}
