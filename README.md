@@ -2,7 +2,7 @@
 
 Inspired by a recent hackathon project I participated in. This is an extension of that project. 
 
-Link: https://6451af988eb7a017149e982d--tangerine-mousse-5eae8a.netlify.app/
+Link: https://6458decfe6b8522c5455a1f4--tangerine-mousse-5eae8a.netlify.app/
 
 ![image](https://user-images.githubusercontent.com/119549394/236812492-5cb5bc86-bce7-4bea-a091-93f4f7293583.png)
 
