@@ -2,10 +2,11 @@ import styles from "./Grid.module.scss";
 import { useContext } from "react";
 import { GlobalContext } from "../Context/Context";
 import GithubCard from "../GithubCard/GithubCard";
+import MyChart from "../Chart/Chart";
 
 const Grid = () => {
   const { github }: any = useContext(GlobalContext);
-
+  let n: any = 1;
   return (
     <>
       <section className={styles.Grid__wrapper}>
@@ -16,6 +17,13 @@ const Grid = () => {
               return (
                 <>
                   <GithubCard item={item} />
+                  {n === 1
+                    ? (n = 2 && (
+                        <div className={styles.graph}>
+                          <MyChart />
+                        </div>
+                      ))
+                    : ""}
                 </>
               );
             })}
